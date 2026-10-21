@@ -1,0 +1,146 @@
+[
+  {
+    "scenario": "基础事实_数值精确匹配",
+    "question": "扫地机器人的电池容量是多少？",
+    "product_id": "追风智能扫地机器人",
+    "version": "V3.0",
+    "expected_status": "answered",
+    "expected_keywords": ["5200mAh", "180分钟"],
+    "expected_source": "追风智能扫地机器人 V3.0.md"
+  },
+  {
+    "scenario": "异常排查_故障指示识别",
+    "question": "电饭煲屏幕显示E1是怎么回事？",
+    "product_id": "醇香IH智能电饭煲",
+    "version": "1.5",
+    "expected_status": "answered",
+    "expected_keywords": ["底部传感器断路", "切断电源"],
+    "expected_source": "醇香IH智能电饭煲 1.5版.md"
+  },
+  {
+    "scenario": "操作指南_模式重置",
+    "question": "耳机单耳没有声音怎么恢复出厂设置？",
+    "product_id": "聆音真无线降噪耳机",
+    "version": "Pro 2",
+    "expected_status": "answered",
+    "expected_keywords": ["充电盒", "长按背部按键10秒"],
+    "expected_source": "聆音真无线降噪耳机 Pro 2.md"
+  },
+  {
+    "scenario": "安全边界_危险操作警告",
+    "question": "能戴着这块手表洗热水澡或者泡温泉吗？",
+    "product_id": "跃动智能运动手表",
+    "version": "S5",
+    "expected_status": "answered",
+    "expected_keywords": ["严禁", "热水淋浴", "短路"],
+    "expected_source": "跃动智能运动手表 S5.md"
+  },
+  {
+    "scenario": "特殊词拦截_退款触发",
+    "question": "投影仪太模糊了，我要申请退款",
+    "product_id": "极光智能投影仪",
+    "version": "X-Pro",
+    "expected_status": "handoff",
+    "expected_keywords": [],
+    "expected_source": null
+  },
+  {
+    "scenario": "特殊词拦截_投诉引发人工",
+    "question": "净水器的安装师傅乱收费，请给我转人工投诉",
+    "product_id": "净世反渗透净水器",
+    "version": "1000G",
+    "expected_status": "handoff",
+    "expected_keywords": [],
+    "expected_source": null
+  },
+  {
+    "scenario": "FAQ自动匹配命中",
+    "question": "为什么刚买回来的冰箱两侧摸起来很烫手？",
+    "product_id": "霜影对开门智能冰箱",
+    "version": "520L",
+    "expected_status": "answered",
+    "expected_keywords": ["正常", "冷凝器", "50℃-60℃"],
+    "expected_source": "霜影对开门智能冰箱.md"
+  },
+  {
+    "scenario": "知识盲区_超纲拒答测试",
+    "question": "铁卫智能指纹锁的摄像头是多少万像素的？",
+    "product_id": "铁卫智能指纹锁",
+    "version": "V4.0",
+    "expected_status": "no_answer",
+    "expected_keywords": [],
+    "expected_source": null
+  },
+  {
+    "scenario": "使用禁忌_负面条件检索",
+    "question": "微波模式下可以用随机附赠的金属烤盘吗？",
+    "product_id": "星厨蒸烤微一体机",
+    "version": "Max版",
+    "expected_status": "answered",
+    "expected_keywords": ["严禁", "火花", "玻璃或陶瓷"],
+    "expected_source": "星厨蒸烤微一体机.md"
+  },
+  {
+    "scenario": "产品维护_耗材清洗测试",
+    "question": "吹风机的防尘网能直接水洗吗？",
+    "product_id": "绿洲高速吹风机",
+    "version": "H8",
+    "expected_status": "answered",
+    "expected_keywords": ["严禁水洗", "软布", "软毛刷"],
+    "expected_source": "绿洲高速吹风机.md"
+  },
+  {
+    "scenario": "重置与安全流程测试",
+    "question": "我把指纹锁的管理员密码忘了怎么办？",
+    "product_id": "铁卫智能指纹锁",
+    "version": "V4.0",
+    "expected_status": "answered",
+    "expected_keywords": ["Reset按钮", "长按5秒", "123456"],
+    "expected_source": "铁卫智能指纹锁.md"
+  },
+  {
+    "scenario": "连续追问_代词指代解析",
+    "question": "这款空气净化器的滤网多久需要更换一次？",
+    "product_id": "森呼吸空气净化器",
+    "version": "A6",
+    "expected_status": "answered",
+    "expected_keywords": ["6-9个月", "RFID"],
+    "expected_source": "森呼吸空气净化器.md"
+  },
+  {
+    "scenario": "参数辨伪_多实体检索",
+    "question": "机械键盘的蓝牙怎么配对？能连几台设备？",
+    "product_id": "青峰机械键盘",
+    "version": "75%配列版",
+    "expected_status": "answered",
+    "expected_keywords": ["3台设备", "FN + 1/2/3"],
+    "expected_source": "青峰机械键盘.md"
+  },
+  {
+    "scenario": "产品隔离测试_无产品触发",
+    "question": "你们的无人机怎么连接手机APP？",
+    "product_id": "未知型号",
+    "version": "1.0",
+    "expected_status": "no_product",
+    "expected_keywords": [],
+    "expected_source": null
+  },
+  {
+    "scenario": "硬件维护_特殊状态应对",
+    "question": "电动牙刷第一次用觉得嘴麻怎么解决？",
+    "product_id": "皓齿声波电动牙刷",
+    "version": "极客版",
+    "expected_status": "answered",
+    "expected_keywords": ["敏感柔和型", "Soft", "适应1到2周"],
+    "expected_source": "皓齿声波电动牙刷.md"
+  },
+  {
+    "scenario": "复杂推导_接口性能上限",
+    "question": "幻影显示器接HDMI线能跑到180Hz吗？",
+    "product_id": "幻影电竞显示器",
+    "version": "G27",
+    "expected_status": "answered",
+    "expected_keywords": ["HDMI 2.0", "受接口带宽限制", "最高仅支持2K+144Hz"],
+    "expected_source": "幻影电竞显示器.md"
+  }
+]

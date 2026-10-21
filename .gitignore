@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 测试与工具缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# 本地配置与密钥
+.env
+.env.*
+!.env.example
+
+# 运行时数据库（含上传资料、聊天记录与人工问答）
+data/*.sqlite3
+data/*.sqlite3-*
+
+# 日志
+*.log
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+
+# Office 临时文件
+~$*
